@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TechCare_Services" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#14B8A6</item>
+
+        <item name="colorControlNormal">#0f172a</item>
+
+        <item name="colorOnPrimary">#0f172a</item>
+
+
+    </style>
+
+    <style name="Base.Theme.TechCare_Services.Dark" parent="Base.Theme.TechCare_Services">
+
+        <item name="android:statusBarColor">#14B8A6</item>
+
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
+
+    <style name="Theme.TechCare_Services" parent="Base.Theme.TechCare_Services" />
+
+    <style name="Theme.TechCare_Services.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.TechCare_Services.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TechCare_Services.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

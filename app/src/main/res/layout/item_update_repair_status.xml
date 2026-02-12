@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#020617"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvRequestId"
+            android:text="Request #1023"
+            android:textColor="#38bdf8"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvServiceInfo"
+            android:layout_marginTop="6dp"
+            android:text="Screen Replacement - Samsung A51"
+            android:textColor="#e5e7eb"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCurrentStatus"
+            android:layout_marginTop="6dp"
+            android:text="Current Status: RECEIVED"
+            android:textColor="#facc15"
+            android:textSize="12sp"/>
+
+        <!-- Status Buttons -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnReceived"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="Received"
+                    android:backgroundTint="#16a34a"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:id="@+id/btnUnderRepair"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Under Repair"
+                    android:backgroundTint="#334155"
+                    android:textColor="#ffffff"/>
+
+                <Button
+                    android:id="@+id/btnReady"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Ready for Pickup"
+                    android:backgroundTint="#334155"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
